@@ -48,6 +48,12 @@ h1{
 }
 
 
+h2{
+    color:white;
+    font-family: "Play", sans-serif;
+}
+
+
 h1>span{
     color:rgb(137, 97, 170);
 }

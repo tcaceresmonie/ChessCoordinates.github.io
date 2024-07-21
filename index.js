@@ -103,14 +103,17 @@ function checkAnswer(){
 
     }else{
         gameOver();
+        $("h2").text("You got "+(userAnswers.length-1)+" answers")
     }
 }
 
 
 function gameOver (){
+    
     started = false;
     clearInterval(timer);
         $("h1").text("Game Over, Click Here Restart");
+        $("h2").text("You got "+userAnswers.length+" answers")
         $("body").removeClass("gradient");
         setTimeout(function(){$("body").addClass("gradient")}, 200);
 }
